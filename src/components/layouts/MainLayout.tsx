@@ -29,7 +29,7 @@ const MainLayout: FunctionComponent<MainLayoutProps> = () => {
           setPageLoaded(true);
         } else {
           if (import.meta.env.VITE_ENV == "DEV") {
-            window.location.replace(import.meta.env.VITE_DJFAN_HOME_URL);
+            window.location.href = "/feed";
           } else {
             window.location.replace(import.meta.env.VITE_DJFAN_HOME_URL);
           }
