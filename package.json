@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "concurrently \"node api/fan-api-server.js\" \"vite\"",
     "stage": "concurrently \"node api/fan-api-server.js\" \"tsc && vite build --mode=staging\"",
-    "build": "concurrently \"node api/fan-api-server.js\" \"tsc && vite build\"",
-    "preview": "concurrently \"node api/fan-api-server.js\" \"vite preview\""
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepare": "npm run dev"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.7.1",
